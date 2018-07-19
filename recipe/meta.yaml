@@ -1,6 +1,6 @@
 {% set name = "django-reversion" %}
-{% set version = "2.0.13" %}
-{% set sha256 = "2e105a2c74462ce7de97afdcfb187f27b88a547dda1216a8aab964d32a882edf" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "61e07432799a11734c5b9911de7a4c2ba2dd93f3d83861abeef3018ddf08a7b4" %}
 
 package:
   name: {{ name|lower }}
