@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.2" %}
 
 package:
   name: django-reversion
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-reversion/django-reversion-{{ version }}.tar.gz
-  sha256: 61e07432799a11734c5b9911de7a4c2ba2dd93f3d83861abeef3018ddf08a7b4
+  sha256: 9b8a245917e1bae131d3210c9ca7efbc066e60f32efa436e391c9803c3f4b61b
 
 build:
   number: 0
