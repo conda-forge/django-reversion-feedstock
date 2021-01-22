@@ -5,9 +5,13 @@ Home: https://github.com/etianen/django-reversion
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-reversion-feedstock/blob/master/LICENSE.txt)
 
 Summary: django-reversion is an extension to the Django web framework that provides version control for model instances.
+
+Development: https://github.com/etianen/django-reversion
+
+Documentation: https://django-reversion.readthedocs.io/en/stable/
 
 django-reversion is an extension to the Django web framework that provides version control for model instances.
 
