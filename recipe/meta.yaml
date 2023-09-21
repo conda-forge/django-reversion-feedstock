@@ -15,10 +15,10 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.7
     - pip
   run:
-    - python
+    - python >=3.7
     - django >=1.8
 
 test:
@@ -39,4 +39,4 @@ extra:
   recipe-maintainers:
     - cshaley
     - sannykr
-
+    - rxm7706
