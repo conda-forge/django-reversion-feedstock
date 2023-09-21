@@ -1,4 +1,4 @@
-{% set version = "3.0.5" %}
+{% set version = "3.0.8" %}
 
 package:
   name: django-reversion
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-reversion/django-reversion-{{ version }}.tar.gz
-  sha256: 1add55bb05311f4acd26683dd71af60729d4f33dfe42c608da8e15e679a32009
+  sha256: 49e9930f90322dc6a2754dd26144285cfcc1c5bd0c1c39ca95d5602c5054ae32
 
 build:
   number: 0
@@ -15,26 +15,23 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.7
     - pip
   run:
-    - python
-    - django >=1.8
+    - python >=3.7
+    - django >=1.8,<4.0
 
 test:
   imports:
-    - reversion    
+    - reversion
 
 about:
   home: https://github.com/etianen/django-reversion
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'django-reversion is an extension to the Django web framework that 
-  provides version control for model instances.'
-  description: 
-    django-reversion is an extension to the Django web framework that provides 
-    version control for model instances.
+  summary: django-reversion is an extension to the Django web framework that provides version control for model instances.
+  description: django-reversion is an extension to the Django web framework that provides version control for model instances.
   doc_url: https://django-reversion.readthedocs.io/en/stable/
   dev_url: https://github.com/etianen/django-reversion
 
@@ -43,4 +40,4 @@ extra:
     - rxm7706
     - cshaley
     - sannykr
-    
+    - rxm7706
