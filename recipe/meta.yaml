@@ -1,29 +1,35 @@
-{% set version = "3.0.8" %}
+{% set name = "django-reversion" %}
+{% set version = "5.0.5" %}
 
 package:
-  name: django-reversion
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/django-reversion/django-reversion-{{ version }}.tar.gz
-  sha256: 49e9930f90322dc6a2754dd26144285cfcc1c5bd0c1c39ca95d5602c5054ae32
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-reversion-{{ version }}.tar.gz
+  sha256: 253c691b0a4e0be1deec0b62c38c9fbb75b6e5a8fd81d3b58a26f46135970106
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
-  build:
-    - python >=3.7
+  host:
+    - python >=3.8
+    - babel
     - pip
   run:
-    - python >=3.7
-    - django >=1.8,<4.0
+    - python >=3.8
+    - django >=3.2
 
 test:
   imports:
     - reversion
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/etianen/django-reversion
@@ -37,7 +43,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - rxm7706
     - cshaley
     - sannykr
     - rxm7706
