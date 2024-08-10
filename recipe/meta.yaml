@@ -1,13 +1,13 @@
 {% set name = "django-reversion" %}
-{% set version = "5.0.12" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-reversion-{{ version }}.tar.gz
-  sha256: c047cc99a9f1ba4aae6db89c3ac243478d6de98ec8a60c7073fcc875d89c5cdb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 3309821e5b6fceedcce6b6975f1a9c7fab6ae7c7d0e1276a90e345946fa0dcb8
 
 build:
   noarch: python
