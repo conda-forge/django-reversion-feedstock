@@ -1,5 +1,5 @@
 {% set name = "django-reversion" %}
-{% set version = "6.4.0" %}
+{% set version = "6.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fce089d8bab8d64b4ec41e9db758ce552ba06a008e42a1c9e4eb2f5faaa01cbc
+  sha256: 84abc1d6091a21c6f4e9c1fee383022580ae32944b8544ef61453896d877ca49
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - django >=4.2
+    - django >=5.2
 
 test:
   imports:
